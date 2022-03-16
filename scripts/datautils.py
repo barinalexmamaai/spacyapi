@@ -1,5 +1,4 @@
 from spacy.tokens import DocBin
-from scripts.constants import ROOT_DIR
 
 
 def makedocs(data: list, labels: list, package):
@@ -27,6 +26,3 @@ def datatodocbin(data: list, labels: list, path: str, package):
     docs = makedocs(data, labels, package)
     docbin = DocBin(docs=docs)
     docbin.to_disk(path)
-
-
-print(ROOT_DIR)

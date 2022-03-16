@@ -1,0 +1,8 @@
+{
+  "labels":[
+    "HELP",
+    "YES",
+    "NO"
+  ],
+  "threshold":0.5
+}
