@@ -26,3 +26,6 @@ def datatodocbin(data: list, labels: list, path: str, package):
     docs = makedocs(data, labels, package)
     docbin = DocBin(docs=docs)
     docbin.to_disk(path)
+
+from transformers import AutoTokenizer
+tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
