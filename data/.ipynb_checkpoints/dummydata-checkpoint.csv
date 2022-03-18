@@ -1,0 +1,25 @@
+,text,label
+0,would you please help me,HELP
+1,give me some hints,HELP
+2,how should I proceed,HELP
+3,I don't understand,HELP
+4,yeap,YES
+5,ok,YES
+6,fine,YES
+7,sure,YES
+8,perfect,YES
+9,no,NO
+10,cancel,NO
+11,disagree,NO
+12,please help,HELP
+13,hints,HELP
+14,help,HELP
+15,I don't get it,HELP
+16,let's do it,YES
+17,right,YES
+18,"well, ok",YES
+19,"ok, fine",YES
+20,nah,NO
+21,I don't want it,NO
+22,no no no,NO
+23,stop it,NO

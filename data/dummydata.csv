@@ -1,0 +1,25 @@
+text,label
+would you please help me,HELP
+give me some hints,HELP
+how should I proceed,HELP
+I don't understand,HELP
+yeap,YES
+ok,YES
+fine,YES
+sure,YES
+perfect,YES
+no,NO
+cancel,NO
+disagree,NO
+please help,HELP
+hints,HELP
+help,HELP
+I don't get it,HELP
+let's do it,YES
+right,YES
+"well, ok",YES
+"ok, fine",YES
+nah,NO
+I don't want it,NO
+no no no,NO
+stop it,NO
