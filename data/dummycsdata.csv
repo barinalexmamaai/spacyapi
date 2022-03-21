@@ -1,0 +1,31 @@
+text,label
+pomoc,HELP
+potřebuju pomoc,HELP
+pomoz mi,HELP
+zobraz nápovědu,HELP
+nápověda,HELP
+nevím co dál,HELP
+co mám dělat dál,HELP
+poraď mi,HELP
+ano,CONFIRMATION_YES
+jo,CONFIRMATION_YES
+ok,CONFIRMATION_YES
+jasně,CONFIRMATION_YES
+ne,CONFIRMATION_NO
+ani náhodou,CONFIRMATION_NO
+zrušit,CONFIRMATION_NO
+omyl,CONFIRMATION_NO
+rozmyslel jsem se,CONFIRMATION_NO
+další krok,NEXT
+chci dělat něco nového,NEXT
+jdeme dál,NEXT
+restart levelu,RESTART
+restart,RESTART
+odznova,RESTART
+celé znovu,RESTART
+tak znovu,RESTART
+určitou část dne,IRRELEVANT
+ale každý obývá,IRRELEVANT
+ještě devět mužských a dva ženské,IRRELEVANT
+zvuky či videa,IRRELEVANT
+je městský park ve východní části,IRRELEVANT

@@ -1,0 +1,31 @@
+,text,label
+0,pomoc,HELP
+1,potřebuju pomoc,HELP
+2,pomoz mi,HELP
+3,zobraz nápovědu,HELP
+4,nápověda,HELP
+5,nevím co dál,HELP
+6,co mám dělat dál,HELP
+7,poraď mi,HELP
+8,ano,CONFIRMATION_YES
+9,jo,CONFIRMATION_YES
+10,ok,CONFIRMATION_YES
+11,jasně,CONFIRMATION_YES
+12,ne,CONFIRMATION_NO
+13,ani náhodou,CONFIRMATION_NO
+14,zrušit,CONFIRMATION_NO
+15,omyl,CONFIRMATION_NO
+16,rozmyslel jsem se,CONFIRMATION_NO
+17,další krok,NEXT
+18,chci dělat něco nového,NEXT
+19,jdeme dál,NEXT
+20,restart levelu,RESTART
+21,restart,RESTART
+22,odznova,RESTART
+23,celé znovu,RESTART
+24,tak znovu,RESTART
+25,určitou část dne,IRRELEVANT
+26,ale každý obývá,IRRELEVANT
+27,ještě devět mužských a dva ženské,IRRELEVANT
+28,zvuky či videa,IRRELEVANT
+29,je městský park ve východní části,IRRELEVANT
