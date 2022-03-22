@@ -1,0 +1,121 @@
+text,label
+help!,HELP
+"can you help me, please?",HELP
+I need some assistance,HELP
+could you give me a hand?,HELP
+I need your support,HELP
+"Would you mind helping me, please?",HELP
+Could you give me a digout?,HELP
+I need a helping hand,HELP
+"Could someone help me, please?",HELP
+some hints would be appreciated,HELP
+give me some hints,HELP
+any tips?,HELP
+what can I do?,HELP
+show me some hints,HELP
+show me help menu,HELP
+no problem,CONFIRMATION_YES
+sure,CONFIRMATION_YES
+sure thing,CONFIRMATION_YES
+I’m on it,CONFIRMATION_YES
+I’d be delighted,CONFIRMATION_YES
+I’d love to,CONFIRMATION_YES
+all right,CONFIRMATION_YES
+fine,CONFIRMATION_YES
+gladly,CONFIRMATION_YES
+by all means,CONFIRMATION_YES
+of course,CONFIRMATION_YES
+certainly,CONFIRMATION_YES
+definitely,CONFIRMATION_YES
+absolutely,CONFIRMATION_YES
+yep,CONFIRMATION_YES
+yeah,CONFIRMATION_YES
+ok,CONFIRMATION_YES
+okay,CONFIRMATION_YES
+agree,CONFIRMATION_YES
+indeed,CONFIRMATION_YES
+true,CONFIRMATION_YES
+uh huh,CONFIRMATION_YES
+totally,CONFIRMATION_YES
+exactly,CONFIRMATION_YES
+for sure!,CONFIRMATION_YES
+why not?,CONFIRMATION_YES
+that’s right,CONFIRMATION_YES
+correct,CONFIRMATION_YES
+go ahead,CONFIRMATION_YES
+"I'm flattered by your offer, but no thank you",CONFIRMATION_NO
+"That sounds fun, but I have a lot going on",CONFIRMATION_NO
+"no, I won't be able to fit that into my schedule",CONFIRMATION_NO
+"thanks, but I'm all good",CONFIRMATION_NO
+I cannot accept your offer,CONFIRMATION_NO
+I do not wish to accept your offer,CONFIRMATION_NO
+"no, sorry",CONFIRMATION_NO
+I have to decline this time,CONFIRMATION_NO
+that's just not possible,CONFIRMATION_NO
+it won't work out this time,CONFIRMATION_NO
+that's not the right choice,CONFIRMATION_NO
+I would rather not do it,CONFIRMATION_NO
+I told myself I wouldn't do that again,CONFIRMATION_NO
+my answer is no,CONFIRMATION_NO
+no,CONFIRMATION_NO
+surely not,CONFIRMATION_NO
+absolutely not,CONFIRMATION_NO
+definitely not,CONFIRMATION_NO
+I've actually changed my mind,CONFIRMATION_NO
+decline,CONFIRMATION_NO
+agreeing to this would go against what I believe in,CONFIRMATION_NO
+I can't,CONFIRMATION_NO
+I'm afraid I can't,CONFIRMATION_NO
+pass,CONFIRMATION_NO
+false,CONFIRMATION_NO
+that's not what I've chosen,CONFIRMATION_NO
+cancel,CONFIRMATION_NO
+I didn't want that,CONFIRMATION_NO
+I did not choose this,CONFIRMATION_NO
+This was not my choice,CONFIRMATION_NO
+go back,CONFIRMATION_NO
+forget it,CONFIRMATION_NO
+next,NEXT
+go next,NEXT
+to the next,NEXT
+"ok, next",NEXT
+next,NEXT
+another,NEXT
+one more,NEXT
+further,NEXT
+subsequent,NEXT
+follow-up,NEXT
+carry forward,NEXT
+the one after,NEXT
+other,NEXT
+restart,RESTART
+reset,RESTART
+restart please,RESTART
+reset please,RESTART
+"restart, now!",RESTART
+start up again,RESTART
+make it start again,RESTART
+She had the gift,IRRELEVANT
+able to paint songs,IRRELEVANT
+I used to practice weaving with spaghetti,IRRELEVANT
+three hours a day,IRRELEVANT
+stopped because I didn't want to die alone,IRRELEVANT
+The ice-cream trucks,IRRELEVANT
+bring back bad memories for all of us,IRRELEVANT
+The sun had set,IRRELEVANT
+and so had his dreams,IRRELEVANT
+The external scars tell only part of the story,IRRELEVANT
+The reservoir water level,IRRELEVANT
+continued to lower,IRRELEVANT
+while we enjoyed our long shower,IRRELEVANT
+His mind was blown,IRRELEVANT
+there was nothing in space,IRRELEVANT
+except space itself,IRRELEVANT
+There aren't enough towels,IRRELEVANT
+in the world,IRRELEVANT
+stop the sewage flowing,IRRELEVANT
+from his mouth,IRRELEVANT
+Purple is the best city,IRRELEVANT
+in the forest,IRRELEVANT
+I was fishing for compliments,IRRELEVANT
+and accidentally caught a trout,IRRELEVANT
