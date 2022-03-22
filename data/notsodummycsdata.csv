@@ -1,0 +1,98 @@
+text,label
+pomoc,HELP
+potřebuju pomoc,HELP
+pomoz mi,HELP
+zobraz nápovědu,HELP
+nápověda,HELP
+nevím co dál,HELP
+co mám dělat dál,HELP
+poraď mi,HELP
+nemohu si pomoci,HELP
+podej mi pomocnou ruku prosím,HELP
+mohl bys mi pomoci,HELP
+"potřebuju někoho, kdo mi pomůže",HELP
+volam o pomoc,HELP
+pomoz chudákovi,HELP
+nedá se nic dělat,HELP
+navrhneš něco,HELP
+nějaký náznak prosím,HELP
+doporučení,HELP
+žádam o radu,HELP
+ano,CONFIRMATION_YES
+jo,CONFIRMATION_YES
+ok,CONFIRMATION_YES
+no,CONFIRMATION_YES
+jasně,CONFIRMATION_YES
+určitě,CONFIRMATION_YES
+jistě,CONFIRMATION_YES
+okay,CONFIRMATION_YES
+"to jo, určitě",CONFIRMATION_YES
+"no, jasně",CONFIRMATION_YES
+samozřejmě,CONFIRMATION_YES
+nepochybně,CONFIRMATION_YES
+najisto,CONFIRMATION_YES
+to bych prosil,CONFIRMATION_YES
+ano prosím,CONFIRMATION_YES
+na to dám krk,CONFIRMATION_YES
+s radostí,CONFIRMATION_YES
+s potěšením,CONFIRMATION_YES
+rozhodně,CONFIRMATION_YES
+zcela určitě,CONFIRMATION_YES
+souhlas,CONFIRMATION_YES
+dobře,CONFIRMATION_YES
+kladná odpověď,CONFIRMATION_YES
+naprosto souhlasím,CONFIRMATION_YES
+zajisté,CONFIRMATION_YES
+ovšem,CONFIRMATION_YES
+potvrzuju,CONFIRMATION_YES
+stvrzuju,CONFIRMATION_YES
+ne,CONFIRMATION_NO
+ani náhodou,CONFIRMATION_NO
+zrušit,CONFIRMATION_NO
+ovšemže ne,CONFIRMATION_NO
+"samozřejmě, že ne",CONFIRMATION_NO
+v žádném případě,CONFIRMATION_NO
+nesouhlasím,CONFIRMATION_NO
+mám jiný názor,CONFIRMATION_NO
+spíš ne,CONFIRMATION_NO
+radějí ne,CONFIRMATION_NO
+zruš to prosím,CONFIRMATION_NO
+naprosto ne,CONFIRMATION_NO
+samozřejmě ne,CONFIRMATION_NO
+určitě ne,CONFIRMATION_NO
+tak to nepujde,CONFIRMATION_NO
+ne prosím,CONFIRMATION_NO
+tak to ne,CONFIRMATION_NO
+Raději bych to nedělal,CONFIRMATION_NO
+spíš něco jiného,CONFIRMATION_NO
+odvolej to,CONFIRMATION_NO
+odvolat,CONFIRMATION_NO
+chtěl bych to zrušit,CONFIRMATION_NO
+rozhodně ne,CONFIRMATION_NO
+ovšem ne,CONFIRMATION_NO
+záporná odpověď,CONFIRMATION_NO
+není potřeba,CONFIRMATION_NO
+není třeba,CONFIRMATION_NO
+další krok,NEXT
+chci dělat něco nového,NEXT
+jdeme dál,NEXT
+následující,NEXT
+další,NEXT
+dál,NEXT
+pokračuj,NEXT
+příští,NEXT
+následný,NEXT
+restart levelu,RESTART
+restart,RESTART
+odznova,RESTART
+celé znovu,RESTART
+tak znovu,RESTART
+nastartuj znovu,RESTART
+nastartuj ještě jednou,RESTART
+spusẗ to znovu,RESTART
+určitou část dne,IRRELEVANT
+ale každý obývá,IRRELEVANT
+ještě devět mužských a dva ženské,IRRELEVANT
+zvuky či videa,IRRELEVANT
+je městský park ve východní části,IRRELEVANT
+"Není potřeba, abys mi pomáhal",IRRELEVANT
