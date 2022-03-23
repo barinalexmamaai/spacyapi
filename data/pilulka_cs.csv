@@ -1,0 +1,101 @@
+text,label
+co je to pilulka?,About_the_company
+co mi řekneš o pilulce?,About_the_company
+k čemu je pilulka?,About_the_company
+o co se snažíte v pilulce?,About_the_company
+řekni mi něco o pilulce?,About_the_company
+co nabízíte?,About_the_products
+co si můžu koupit?,About_the_products
+co si u vás mohu koupit?,About_the_products
+jaké máte produkty?,About_the_products
+jaké produkty nabízíte,About_the_products
+umíš pilulka prodávat Viagru,About_the_products
+"již nemám na benefitním účtu dost benefitů, mohu doplatit hotově?",FAQ_Pilulka_benefity
+můžu doplatit benefity hotově?,FAQ_Pilulka_benefity
+"můžu použít cash, když nemám dost benefitů?",FAQ_Pilulka_benefity
+"nemám benefity, ale můžu doplatit hotovostí?",FAQ_Pilulka_benefity
+doba doručení?,FAQ_Pilulka_doba_doruceni
+jaká je doba doručení?,FAQ_Pilulka_doba_doruceni
+kdy budu mít připraveno zboží v lékárně?,FAQ_Pilulka_doba_doruceni
+kdy mi přijde výzva k vyzvednutí?,FAQ_Pilulka_doba_doruceni
+Kdy mohu zboží očekávat?,FAQ_Pilulka_doba_doruceni
+kdy můžu zboží čekat?,FAQ_Pilulka_doba_doruceni
+kdy to asi bude v lékárně?,FAQ_Pilulka_doba_doruceni
+kdy zboží dorazí?,FAQ_Pilulka_doba_doruceni
+asi kdy mi to tak přivezete?,FAQ_Pilulka_doruceni
+"kdy asi můžu čekat, že mi zboží dorazí domů?",FAQ_Pilulka_doruceni
+kdy dostanu objednané zboží?,FAQ_Pilulka_doruceni
+kolikátého mi zboží přijde domů?,FAQ_Pilulka_doruceni
+co je klub pilulky,FAQ_Pilulka_klub
+jak funguje pilulka klub?,FAQ_Pilulka_klub
+pilulka klub,FAQ_Pilulka_klub
+nevidím žádnou lékárnu u platby. jak to?,FAQ_Pilulka_lekarny
+proč u platby chybí lékárna?,FAQ_Pilulka_lekarny
+ve volbě dopravy a platby nemám žádnou nebo požadovanou lékárnu,FAQ_Pilulka_lekarny
+berete poukazy na zdravotní pomůcku?,FAQ_Pilulka_poukazy
+mám poukaz na zdravotní pomůcku jde to u vás?,FAQ_Pilulka_poukazy
+mohu u vás uplatnit vystavený poukaz na zdravotní pomůcku od lékaře?,FAQ_Pilulka_poukazy
+moje zásilkovna není v seznamu?,FAQ_Pilulka_zasilkovna
+"nevidím v seznamu zásilkoven tu, kterou si chci vybrat. proč?",FAQ_Pilulka_zasilkovna
+proč není moje zásilkovna uvedena?,FAQ_Pilulka_zasilkovna
+končíme,Goodbyes
+mějte se,Goodbyes
+naschle,Goodbyes
+nashledanou,Goodbyes
+ahoj,Greetings
+ahooj!,Greetings
+ahoooj,Greetings
+dobrý den,Greetings
+zdravím,Greetings
+ach jo,Hate
+jdi do prdele.,Hate
+Nenávidím tě!,Hate
+nic neumíš.,Hate
+sakra to je k ničemu,Hate
+to je strašný.,Hate
+vůbec to nefunguje.,Hate
+jak se máš?,How_are_you
+jak se ti daří?,How_are_you
+jak se vede?,How_are_you
+máš se dobře?,How_are_you
+bůh ví,I_DO_NOT_KNOW
+čert ví,I_DO_NOT_KNOW
+co já vím,I_DO_NOT_KNOW
+jak to mám vědět,I_DO_NOT_KNOW
+netuším,I_DO_NOT_KNOW
+zatím nevím,I_DO_NOT_KNOW
+dobře ty.,Praise
+fakt dobrý.,Praise
+Jsi skvělá,Praise
+jsi výborná,Praise
+to funguje fakt hezky,Praise
+to funguje opravdu pěkně,Praise
+to funguje pěkně.,Praise
+to je bezva,Praise
+to je bezvadný,Praise
+to je fakt pěkný,Praise
+to je fakt super,Praise
+to je prima,Praise
+to je super.,Praise
+to se mi líbí.,Praise
+ty jsi opravdu šikovná,Praise
+Dostanu u vás acylpirin?,SpecificProducts
+máš roušku,SpecificProducts
+Máte panadol?,SpecificProducts
+Máte pilulky na bolest hlavy?,SpecificProducts
+Máte respirátory?,SpecificProducts
+Máte roušky?,SpecificProducts
+Vedete respirátory?,SpecificProducts
+děkuji,Thank_you
+děkuju,Thank_you
+díky,Thank_you
+díky za pomoc,Thank_you
+co je otázka na kterou se mohu zeptat,What_can_I_say
+co mám říct?,What_can_I_say
+Co se mohu zeptat?,What_can_I_say
+na co se mohu zeptat?,What_can_I_say
+na jakou otázku se mohu zeptat,What_can_I_say
+potřebuji pomoci?,What_can_I_say
+co jsi zač?,Who_are_you
+jak se jmenuješ?,Who_are_you
+kdo jsi?,Who_are_you

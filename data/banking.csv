@@ -1,0 +1,174 @@
+text,label
+Pošlete 653 korun na účet 19 pomlčka 167885349 lomeno 0800.,all_in_one
+Pošlete nedoplatek 653 korun do Pražské plynárenské.,all_in_one
+bez předčíslí,bez_predcisli
+nechci předčíslí,bez_predcisli
+přeskočit předčíslí,bez_predcisli
+"Asi mi ukradli kartu, co teď?",blokace_karty
+blokace karty,blokace_karty
+chci zablokovat kartu,blokace_karty
+"Kartu už jsem našel, je možné zrušit tu blokaci?",blokace_karty
+Kdy mi přijde nová karta?,blokace_karty
+"Na mém účtu mi byly strženy nějaké peníze, a já vůbec nevím, za co.",blokace_karty
+Potřebuju zablokovat kartu.,blokace_karty
+"Ukradli mi peněženku s kartou, i občankou. Jak si teď vyberu peníze?",blokace_karty
+"Zjistil jsem, že se mi z účtu ztratily peníze, ale já jsem svou kartu už týden nepoužil.",blokace_karty
+Děkuji,dekuji
+Díky,dekuji
+Díky moc,dekuji
+Fajn dík,dekuji
+o krok zpět,go_back
+vrať se zpátky,go_back
+vraťte se zpátky,go_back
+zpátky,go_back
+zpět,go_back
+dál už nic,hotovo
+hotovo,hotovo
+jdeme dál,hotovo
+jedeme dál,hotovo
+to je celé,hotovo
+to je celý,hotovo
+to je vše,hotovo
+to je všechno,hotovo
+vše,hotovo
+chci poslat peníze,jednorazova_platba
+Chci poslat tři tisíce ségře.,jednorazova_platba
+chci zadat jednorázovou platbu,jednorazova_platba
+Chci zadat jednorázovou platbu.,jednorazova_platba
+chtěl bych poslat peníze,jednorazova_platba
+Chtěl bych si přeposlat peníze na svůj druhý účet.,jednorazova_platba
+Chtěl bych si přeposlat peníze ze svého druhého účtu.,jednorazova_platba
+"Chtěl bych zadat jednorázovou platbu, prosím.",jednorazova_platba
+"Chtěl jsem zaplatit za zboží, co jsem si objednal, ale nedorazil mi SMS kód.",jednorazova_platba
+Já bych potřeboval přeposlat peníze na svůj soukromý účet.,jednorazova_platba
+"Já se teď bohužel nedostanu na pobočku, nešlo by to zaplatit takhle přes telefon?",jednorazova_platba
+"Koupil jsem si na internetu pračku, a potřebuji ji zaplatit.",jednorazova_platba
+"Nefunguje mi internetové bankovnictví, můžu poslat peníze tady přes vás?",jednorazova_platba
+normální platba,jednorazova_platba
+platba,jednorazova_platba
+platba na účet,jednorazova_platba
+platbu,jednorazova_platba
+jinou adresu,jiny_email
+jinou emailovou adresu,jiny_email
+jinou mailovou adresu,jiny_email
+jiný email,jiny_email
+jiný účet,jiny_ucet
+z jiného účtu,jiny_ucet
+chci skončit,konec
+na shledanou,konec
+nashledanou,konec
+sbohem,konec
+už nic nechci,konec
+už nic nepotřebuju,konec
+chci odeslat platbu,odeslani_platby
+odeslat,odeslani_platby
+odešlete platbu,odeslani_platby
+odešli,odeslani_platby
+zaplatit,odeslani_platby
+opravit,opravit
+pokračovat,pokracovat
+pokračuj,pokracovat
+co jiného mohu dělat,pomoc
+co mám dělat,pomoc
+co mám říct,pomoc
+co mám zadat,pomoc
+co mohu dělat,pomoc
+co mohu říct,pomoc
+co mohu zadat,pomoc
+co můžu dělat,pomoc
+co můžu říct,pomoc
+co můžu zadat,pomoc
+co se děje,pomoc
+co se to děje,pomoc
+co teď,pomoc
+jak dál,pomoc
+kde jsem,pomoc
+kde jsme,pomoc
+kde to jsem,pomoc
+kde to jsme,pomoc
+nerozuměl jsem,pomoc
+pomoc,pomoc
+Jaké platby mohu zadat?,pomoc_platby
+na co se mohu zeptat,pomoc_platby
+ahoj,pozdrav
+čau,pozdrav
+Dobré odpoledne,pozdrav
+Dobré ráno,pozdrav
+Dobrý den,pozdrav
+Nazdar,pozdrav
+ještě jednou,say_again
+Mohl bych poprosit o zopakování?,say_again
+můžete to zopakovat,say_again
+"nerozuměl jsem, ještě jednou",say_again
+řekni to znova,say_again
+zopakovat,say_again
+zopakuj,say_again
+zopakujte to,say_again
+validace,validace
+nic není dobře,verifikace_platby_vse_spatne
+všechno je špatně,verifikace_platby_vse_spatne
+vše je špatně,verifikace_platby_vse_spatne
+smazat,zacit_znovu
+vymazat,zacit_znovu
+Začít znova,zacit_znovu
+Začít znovu,zacit_znovu
+Začnu znova,zacit_znovu
+Znova,zacit_znovu
+Znovu,zacit_znovu
+Chtěl bych zadat inkaso.,zadat_inkaso
+"Potřeboval bych nastavit souhlas s inkasem, ale nejde mi to.",zadat_inkaso
+Potřebuju zadat inkaso.,zadat_inkaso
+zadat inkaso,zadat_inkaso
+Chtěla bych posílat dceři měsíčně peníze na její účet.,zadat_trvaly_prikaz
+Chtěl bych měsíčně posílat peníze na charitu.,zadat_trvaly_prikaz
+Chtěl bych si nastavit měsíční zálohy na elektřinu.,zadat_trvaly_prikaz
+Chtěl bych si nastavit trvalou platbu.,zadat_trvaly_prikaz
+Chtěl bych si nastavit trvalý příkaz.,zadat_trvaly_prikaz
+Dá se po telefonu nastavit trvalá platba?,zadat_trvaly_prikaz
+Dá se přes telefon nastavit trvalý příkaz?,zadat_trvaly_prikaz
+"Dá se takhle po telefonu zřídit trvalý příkaz, nebo musím do banky?",zadat_trvaly_prikaz
+"Nenašel jsem, kde se na internetovém bankovnictví nastaví trvalý příkaz. Pomůžete mi?",zadat_trvaly_prikaz
+Potřeboval bych nastavit měsíční zálohy na elektřinu.,zadat_trvaly_prikaz
+zadat trvalý příkaz,zadat_trvaly_prikaz
+žádná operace,zadna_operace
+žádnou,zadna_operace
+Dejte mi chvilku.,zadost_o_strpeni
+Jen si dojdu pro číslo účtu.,zadost_o_strpeni
+Jen si to připravím.,zadost_o_strpeni
+Minutku,zadost_o_strpeni
+Minutku prosím,zadost_o_strpeni
+Mohl bys chvíli počkat.,zadost_o_strpeni
+Počkej,zadost_o_strpeni
+Počkejte,zadost_o_strpeni
+"Počkejte chvilinku, jen si najdu údaje",zadost_o_strpeni
+"Počkejte, musím se podívat.",zadost_o_strpeni
+Počkejte prosím,zadost_o_strpeni
+Vydrž,zadost_o_strpeni
+Vydrž prosím,zadost_o_strpeni
+Mohl bych přes vás upravit výši částky inkasa? Nemám internetové bankovnictví.,zmenit_inkaso
+"Změnila se výše částky na mém inkasu, takže ho potřebuji změnit.",zmenit_inkaso
+změnit inkaso,zmenit_inkaso
+Chtěl bych upravit datum v trvalém příkazu,zmenit_trvaly_prikaz
+Chtěl bych změnit trvalý příkaz.,zmenit_trvaly_prikaz
+Potřeboval bych upravit částku na trvalém příkazu.,zmenit_trvaly_prikaz
+změnit trvalý příkaz,zmenit_trvaly_prikaz
+"Zvýšily se mi měsíční zálohy za elektřinu, a potřebuji upravit částku.",zmenit_trvaly_prikaz
+Chci platbu zrušit,zruseni_platby
+Poslal jsem peníze na špatný účet. Jde to vrátit?,zruseni_platby
+"Zadal jsem špatné číslo účtu, je možné zrušit tu platbu?",zruseni_platby
+zrušit platbu,zruseni_platby
+"Chci zrušit souhlas s inkasem, ale nemůžu to to tam nikde najít.",zrusit_inkaso
+"Potřebuji zrušit souhlas s inkasem, ale na pobočku se teď nedostanu.",zrusit_inkaso
+"Prosím vás, chtěl bych zrušit inkaso, ale s internetovým bankovnictvím to neumím. Pomůžete mi?",zrusit_inkaso
+zrušit inkaso,zrusit_inkaso
+"Chtěl bych zrušit trvalé platby, je to možné?",zrusit_trvaly_prikaz
+"Nenašel jsem, kde se na internetovém bankovnictví zruší trvalý příkaz. Pomůžete mi?",zrusit_trvaly_prikaz
+Potřebuji zrušit trvalý příkaz.,zrusit_trvaly_prikaz
+zrušit trvalý příkaz,zrusit_trvaly_prikaz
+Kolik je na účtu,zustatek_uctu
+Kolik mi zbývá,zustatek_uctu
+Kolik na účtu zbývá,zustatek_uctu
+Kolik peněz je na účtu,zustatek_uctu
+Kolik peněz mi zbývá,zustatek_uctu
+Kolik zbývá na účtu,zustatek_uctu
+zůstatek,zustatek_uctu
