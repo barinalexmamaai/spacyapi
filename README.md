@@ -1,2 +1,4 @@
 # spacyapi
-basic intent classification with spacy
+basic intent classification
+  - spacy
+  - hugging face bert models
