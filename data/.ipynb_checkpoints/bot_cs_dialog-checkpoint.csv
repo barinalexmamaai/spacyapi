@@ -1,0 +1,208 @@
+text,label
+to je vše,all_done
+to je všechno,all_done
+už nic,all_done
+bankovní účet,bank_account_information
+bankovní údaje,bank_account_information
+číslo bankovního účtu,bank_account_information
+číslo účtu,bank_account_information
+jak mám zaplatit,bank_account_information
+kam mám poslat peníze,bank_account_information
+kam poslat platbu,bank_account_information
+kam se má poslat ta platba,bank_account_information
+Na jaký účet mám peníze poslat,bank_account_information
+"Nevím, na které číslo účtu mám zaplatit.",bank_account_information
+chci vyúčtování služeb,billing_of_services
+vyúčtování služeb,billing_of_services
+zajímá mě vyúčtování služeb,billing_of_services
+končím,bye
+loučím se,bye
+nashledanou,bye
+naviděnou,bye
+Zrušit.,cancel
+chci to opravit,correct_slot
+číslo popisné je špatně,correct_slot
+město je špatně,correct_slot
+oprav,correct_slot
+ulice je špatně,correct_slot
+Dál už nic nemám,done
+Hotovo,done
+To je celé,done
+to je vše,done
+To je všechno,done
+Už nic,done
+nemám ponětí,dont_know
+ne neznám,dont_know
+nepamatuji si,dont_know
+nevím,dont_know
+nevybavuji si,dont_know
+neznám,dont_know
+to bohužel nevím,dont_know
+to kdybych věděl,dont_know
+to mi není známo,dont_know
+to vůbec netuším,dont_know
+Jaký je stav mého účtu?,finances_balance
+klientský účet,finances_balance
+nedlužím něco,finances_balance
+nedoplatek,finances_balance
+nevím kolik dlužím,finances_balance
+přeplatek,finances_balance
+stav klientského účtu,finances_balance
+stav účtu,finances_balance
+chci fakturu,finances_invoice
+chci faktury,finances_invoice
+chci poslední fakturu,finances_invoice
+chci zaplatit poslední vyúčtování,finances_invoice
+faktura,finances_invoice
+fakturace,finances_invoice
+Nedostal jsem fakturu za připojení,finances_invoice
+nepřišla mi poslední faktura,finances_invoice
+úhrada,finances_invoice
+vyúčtování,finances_invoice
+zajímají mě faktury,finances_invoice
+chci platby,finances_payment
+chci poslední platbu,finances_payment
+chci výpis plateb,finances_payment
+chci výpis služeb,finances_payment
+výpis plateb,finances_payment
+zaplatil jsem,finances_payment
+finance,finance_support
+Ahoj,hello
+čau,hello
+Dobré odpoledne,hello
+Dobré ráno,hello
+Dobrý den,hello
+Nazdar,hello
+Zdravím,hello
+co jiného mohu dělat,help
+co mám dělat,help
+co mám říct,help
+co mám zadat,help
+co mohu dělat,help
+co mohu říct,help
+co mohu zadat,help
+co můžu dělat,help
+co můžu říct,help
+co můžu zadat,help
+co se děje,help
+co se to děje,help
+co teď,help
+jak dál,help
+kde jsem,help
+kde jsme,help
+kde to jsem,help
+nerozuměl jsem,help
+pomoc,help
+chci dočasně odpojit službu,interrupt_service
+chci přerušit službu,interrupt_service
+přerušení služby,interrupt_service
+přerušit službu,interrupt_service
+je to přesně tak,it_is_correct
+je to správně,it_is_correct
+to odpovídá,it_is_correct
+to souhlasí,it_is_correct
+není to tak,it_is_not_correct
+to není správně,it_is_not_correct
+to nesouhlasí,it_is_not_correct
+ano to vím,know
+ano vím,know
+ano znám,know
+jo to vím,know
+to vím přesně,know
+znám,know
+ani jedno,neither
+ani jedno z toho,neither
+je to něco jiného,neither
+nic z toho,neither
+chci nové připojení,new_connection
+nedokáži určit přesně,not_sure
+nejsem si jistý,not_sure
+nevím přesně,not_sure
+to vám přesně neřeknu,not_sure
+Dobře,ok
+Ok,ok
+jiný požadavek,other_request
+Opravit,pop
+slyšel jsi špatně,pop
+Smaž to,pop
+To je špatně,pop
+to není správně,pop
+Budu diktovat znovu,pop_all
+Celé číslo je špatně,pop_all
+celé je to špatně,pop_all
+Chci začít znovu,pop_all
+Chtěl bych diktovat znovu,pop_all
+diktovat celé znovu,pop_all
+Kompletně to smaž,pop_all
+Můžeme začít znovu?,pop_all
+Můžete vše vymazat?,pop_all
+Opravit celé,pop_all
+opravit vše,pop_all
+Opravit všechno,pop_all
+smazat vše,pop_all
+Smaž to všechno,pop_all
+Začít znovu,pop_all
+Začněme od začátku,pop_all
+Co již bylo nadiktováno za číslo?,repeat_number
+co jsem zatím nadiktoval za číslo?,repeat_number
+co už máme nadiktováno?,repeat_number
+Můžu poprosit o zopakování čísla?,repeat_number
+zopakovat číslo,repeat_number
+zopakuj mi číslo,repeat_number
+ještě jednou,say_it_again
+Mohl bych poprosit o zopakování?,say_it_again
+můžete to zopakovat,say_it_again
+"nerozuměl jsem, ještě jednou",say_it_again
+řekni to znova,say_it_again
+zopakovat,say_it_again
+zopakuj,say_it_again
+zopakujte to,say_it_again
+nechci zadat číslo,skip_street_or_number
+nechci zadat číslo orientační,skip_street_or_number
+nechci zadat číslo popisné,skip_street_or_number
+nechci zadat ulici,skip_street_or_number
+nemá číslo,skip_street_or_number
+nemá číslo orientační,skip_street_or_number
+nemá číslo popisné,skip_street_or_number
+nemá ulici,skip_street_or_number
+nevím číslo,skip_street_or_number
+nevím číslo orientační,skip_street_or_number
+nevím číslo popisné,skip_street_or_number
+nevím ulici,skip_street_or_number
+neznám číslo,skip_street_or_number
+neznám číslo orientační,skip_street_or_number
+neznám číslo popisné,skip_street_or_number
+neznám ulici,skip_street_or_number
+nefunguje mi internet,technical_support_internet_not_working
+nefunguje mi telefon,technical_support_telephone_not_working
+nefunguje mi televize,technical_support_tv_not_working
+chci ukončit smlouvu,terminate_contract
+ukončení smlouvy,terminate_contract
+ukončit smlouvu,terminate_contract
+vypovědění smlouvy,terminate_contract
+vypovědět smlouvu,terminate_contract
+zrušení smlouvy,terminate_contract
+zrušit smlouvu,terminate_contract
+chci převést přípojku,transfer_connection
+převedení přípojy,transfer_connection
+převést připojení,transfer_connection
+převést přípojku,transfer_connection
+převést službu,transfer_connection
+Jak se dostanu ke svému účtu?,user_account_information
+Jak se přihlásím ke svému účtu?,user_account_information
+uživatelský účet,user_account_information
+Dejte mi chvilku.,wait_a_moment
+Jen si to připravím.,wait_a_moment
+Minutku,wait_a_moment
+Minutku prosím,wait_a_moment
+Mohl bys chvíli počkat.,wait_a_moment
+Moment,wait_a_moment
+Momentík,wait_a_moment
+Počkej,wait_a_moment
+Počkej chvíli,wait_a_moment
+Počkejte,wait_a_moment
+"Počkejte chvilinku, jen si najdu údaje",wait_a_moment
+"Počkejte, musím se podívat.",wait_a_moment
+Počkejte prosím,wait_a_moment
+Vydrž,wait_a_moment
+Vydrž prosím,wait_a_moment
