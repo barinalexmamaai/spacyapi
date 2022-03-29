@@ -1,8 +1,7 @@
-import spacy
 from spacy.cli import init_config
 from spacy.cli.train import train
 from scripts.constants import CONFIG_DIR, DATA_DIR, OUTPUT_DIR
-from scripts.pathutils import gettimestamp, create_directories
+from scripts.spacyapi.pathutils import gettimestamp, create_directories
 
 
 class Trainer:
