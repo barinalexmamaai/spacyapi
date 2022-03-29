@@ -1,0 +1,4 @@
+modelname: "Seznam/small-e-czech"
+datapath: "banking.csv"
+lr: 0.0002
+nepochs: 10

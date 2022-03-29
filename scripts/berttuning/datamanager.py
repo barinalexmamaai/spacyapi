@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from imblearn.over_sampling import RandomOverSampler
 from transformers import AutoTokenizer
+from scripts.constants import DATA_DIR
 import numpy as np
 
 
@@ -50,14 +51,15 @@ def getmapping(data: pd.DataFrame) -> dict:
     return labelmapping
 
 
-def splitdata(data: pd.DataFrame) -> dict:
+def splitdata(data: pd.DataFrame, ratio: float = 0.2) -> dict:
     """
     :param data: data frame with 'text' and 'intlabel' columns
+    :param ratio: ratio of a test set to a data set
     :return: train and test data sets
     """
     texts = data.text.tolist()
     labels = data.intlabel.tolist()
-    trntxt, tsttxt, trnlbl, tstlbl = train_test_split(texts, labels, test_size=0.2)
+    trntxt, tsttxt, trnlbl, tstlbl = train_test_split(texts, labels, test_size=ratio)
     return {"train": {"text": trntxt, "label": trnlbl},
             "test": {"text": tsttxt, "label": tstlbl}}
 
@@ -101,17 +103,38 @@ def countlabels(data: dict) -> pd.DataFrame:
 class DataManager:
     def __init__(self, path: str, tokenizer):
         """
-        :param path: path to a csv file with two columns 'text', 'label'
+        :param path: relative to a data folder path to a csv file with two columns 'text', 'label'
         :param tokenizer: encode text into vectors with integer values.
             loaded with from_pretrained() function for a model that is about to be tuned
         """
-        self.data = loadpreprocesseddata(path=path)
+        self.data = loadpreprocesseddata(path=f"{DATA_DIR}/{path}")
         self.labelmapping = getmapping(data=self.data)
         self.nlabels = len(self.labelmapping.values())
+        self.tokenizer = tokenizer
+        self.datasets = {}
+        self.trainset = []
+        self.testset = []
+        self.resamplesets()
+
+    def reloaddata(self, path: str):
+        """
+        Reload and preprocess again raw data
+
+        :param path: relative to a data folder path to a csv file with two columns 'text', 'label'
+        """
+        self.data = loadpreprocesseddata(path=f"{DATA_DIR}/{path}")
+        self.labelmapping = getmapping(data=self.data)
+        self.nlabels = len(self.labelmapping.values())
+        self.resamplesets()
+
+    def resamplesets(self):
+        """
+        Randomly split data into train and test sets
+        """
         self.datasets = splitdata(data=self.data)
         self.datasets["train"] = balancedata(data=self.datasets["train"])
-        self.trainset = encodefeatures(data=self.datasets["train"], tokenizer=tokenizer)
-        self.testset = encodefeatures(data=self.datasets["test"], tokenizer=tokenizer)
+        self.trainset = encodefeatures(data=self.datasets["train"], tokenizer=self.tokenizer)
+        self.testset = encodefeatures(data=self.datasets["test"], tokenizer=self.tokenizer)
 
     def getdistribution(self, name: str):
         """
@@ -123,8 +146,5 @@ class DataManager:
 
 
 if __name__ == "__main__":
-    from scripts.constants import DATA_DIR
     tokenizer = AutoTokenizer.from_pretrained("Seznam/small-e-czech")
-    dm = DataManager(path=f"{DATA_DIR}/banking.csv", tokenizer=tokenizer)
-    df = dm.getdistribution(name="test")
-    print(df)
+    dm = DataManager(path=f"banking.csv", tokenizer=tokenizer)

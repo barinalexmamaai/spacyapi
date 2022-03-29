@@ -1,10 +1,11 @@
 from transformers import AutoTokenizer
-from transformers import AutoModelForSequenceClassification
+from transformers import AutoModelForSequenceClassification as AMSC
 from transformers import TrainingArguments, Trainer
 import numpy as np
 import time
 import matplotlib.pyplot as plt
 from scripts.berttuning.datamanager import DataManager
+from scripts.constants import CONFIG_DIR
 
 
 def showlearningcurve(loss: list, evalloss: list):
@@ -31,10 +32,27 @@ class FineTuner:
         self.config = config
         self.tokenizer = AutoTokenizer.from_pretrained(self.config["modelname"])
         self.dm = DataManager(path=self.config["datapath"], tokenizer=self.tokenizer)
-        self.model = AutoModelForSequenceClassification.from_pretrained(self.config["modelname"],
-                                                                        num_labels=self.dm.nlabels)
+        self.model = AMSC.from_pretrained(self.config["modelname"], num_labels=self.dm.nlabels)
         self.args = self.getargs()
         self.trainer = self.gettrainer()
+
+    def reloaddata(self):
+        """
+        Reload and preprocess raw data
+        """
+        self.dm.reloaddata(path=self.config["datapath"])
+
+    def resample(self):
+        """
+        Randomly resample train and test sets
+        """
+        self.dm.resamplesets()
+
+    def reloadmodel(self):
+        """
+        Reload model for fine tuning
+        """
+        self.model = AMSC.from_pretrained(self.config["modelname"], num_labels=self.dm.nlabels)
 
     def getargs(self) -> TrainingArguments:
         """
@@ -44,11 +62,11 @@ class FineTuner:
             output_dir="./tunedbert",
             do_eval=True,
             evaluation_strategy="epoch",
-            learning_rate=2e-4,
+            learning_rate=self.config["lr"],
             per_device_train_batch_size=16,
             per_device_eval_batch_size=16,
             logging_strategy="epoch",
-            num_train_epochs=10,
+            num_train_epochs=self.config["nepochs"],
             weight_decay=0.01,
         )
 
@@ -79,10 +97,11 @@ class FineTuner:
 
     def predictbatch(self, batch: list) -> np.ndarray:
         """
-        :param batch: list of encoded input
+        :param batch: list of encoded inputs
         :return: numpy array of predicted labels
         """
-        rawpredictions = self.trainer.predict(batch)
+        predictions = self.trainer.predict(batch)
+        return np.argmax(predictions.predictions, axis=1)
 
     def humanpredict(self, sentence: str) -> str:
         """
@@ -90,3 +109,7 @@ class FineTuner:
         """
         pass
 
+
+if __name__ == "__main__":
+    from scripts.berttuning.datautils import loadconfig
+    config = loadconfig(path=f"{CONFIG_DIR}/finetune.yaml")
