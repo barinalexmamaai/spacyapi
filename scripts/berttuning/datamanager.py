@@ -107,6 +107,7 @@ class DataManager:
         """
         self.data = loadpreprocesseddata(path=path)
         self.labelmapping = getmapping(data=self.data)
+        self.nlabels = len(self.labelmapping.values())
         self.datasets = splitdata(data=self.data)
         self.datasets["train"] = balancedata(data=self.datasets["train"])
         self.trainset = encodefeatures(data=self.datasets["train"], tokenizer=tokenizer)
