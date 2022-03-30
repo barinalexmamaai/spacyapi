@@ -5,19 +5,19 @@ from scripts.constants import TUNED_DIR
 
 
 class TextClassifier:
-    def __init__(self, modelname: str, modelpath: str):
+    def __init__(self, modelpath: str):
         """
-        :param modelname: name of a tuned model
         :param modelpath: path to a stored fine tuned model
         """
-        tokenizer = AutoTokenizer.from_pretrained(modelname)
-        model = AMSC.from_pretrained(f"{TUNED_DIR}/{modelpath}")
+        path = f"{TUNED_DIR}/{modelpath}"
+        tokenizer = AutoTokenizer.from_pretrained(path)
+        model = AMSC.from_pretrained(path)
         self.pipeline = TextClassificationPipeline(model=model, tokenizer=tokenizer)
 
-    def classify(self, text: str):
+    def classify(self, text: str) -> str:
         """
-        :param text:
-        :return:
+        :param text: input string to classify
+        :return: predicted label
         """
         out = self.pipeline(text)
         return out[0]['label']
@@ -25,7 +25,11 @@ class TextClassifier:
 
 if __name__ == "__main__":
     modelpath = "2022_03_30_15_28_38_883828"
-    clf = TextClassifier(modelname="Seznam/small-e-czech", modelpath=modelpath)
-    print(clf.classify("Díky"))
+    clf = TextClassifier(modelpath=modelpath)
+    import time
+    s = time.time()
+    label = clf.classify("vrať se zpátky")
+    e = time.time() - s
+    print(label, e * 1000)
     # model = AMSC.from_pretrained(f"{TUNED_DIR}/{modelpath}")
     # print(model.config)
