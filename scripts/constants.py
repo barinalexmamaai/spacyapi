@@ -6,3 +6,4 @@ ROOT_DIR = os.path.abspath(os.path.join(SRC_DIR, os.pardir))
 DATA_DIR = f"{ROOT_DIR}/data"
 CONFIG_DIR = f"{ROOT_DIR}/configs"
 OUTPUT_DIR = f"{ROOT_DIR}/output"
+TUNED_DIR = f"{ROOT_DIR}/tunedbert"

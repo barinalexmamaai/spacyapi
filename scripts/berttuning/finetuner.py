@@ -5,7 +5,8 @@ import numpy as np
 import time
 import matplotlib.pyplot as plt
 from scripts.berttuning.datamanager import DataManager
-from scripts.constants import CONFIG_DIR
+from scripts.constants import CONFIG_DIR, OUTPUT_DIR, TUNED_DIR
+from scripts.pathutils import gettimestamp, create_directories
 
 
 def showlearningcurve(loss: list, evalloss: list):
@@ -33,6 +34,8 @@ class FineTuner:
         self.tokenizer = AutoTokenizer.from_pretrained(self.config["modelname"])
         self.dm = DataManager(path=self.config["datapath"], tokenizer=self.tokenizer)
         self.model = AMSC.from_pretrained(self.config["modelname"], num_labels=self.dm.nlabels)
+        self.model.config.id2label = self.dm.id2label
+        self.model.config.label2id = self.dm.label2id
         self.args = self.getargs()
         self.trainer = self.gettrainer()
 
@@ -59,7 +62,7 @@ class FineTuner:
         :return: configured training arguments
         """
         return TrainingArguments(
-            output_dir="./tunedbert",
+            output_dir=OUTPUT_DIR,
             do_eval=True,
             evaluation_strategy="epoch",
             learning_rate=self.config["lr"],
@@ -109,7 +112,19 @@ class FineTuner:
         """
         pass
 
+    def savemodel(self):
+        """
+        Store model to the corresponding directory
+        """
+        output_dir = f"{TUNED_DIR}/{gettimestamp()}"
+        create_directories(output_dir)
+        self.trainer.save_model(output_dir=output_dir)
+
 
 if __name__ == "__main__":
     from scripts.berttuning.datautils import loadconfig
     config = loadconfig(path=f"{CONFIG_DIR}/finetune.yaml")
+    tuner = FineTuner(config=config)
+    tuner.train(learningcurve=True)
+    tuner.trainer.evaluate()
+    tuner.savemodel()

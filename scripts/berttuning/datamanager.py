@@ -38,17 +38,19 @@ def loadpreprocesseddata(path: str) -> pd.DataFrame:
     return df
 
 
-def getmapping(data: pd.DataFrame) -> dict:
+def getmapping(data: pd.DataFrame) -> (dict, dict):
     """
     :param data: data frame with 'intlabel' columns containing int values
         and 'label' column containing str values
-    :return: mapping from int values to str
+    :return: mappings from int values to str and reverse
     """
-    labelmapping = {}
+    id2label = {}
+    label2id = {}
     for key in data.intlabel.unique():
         value = data.loc[data['intlabel'] == key, 'label'].unique()[0]
-        labelmapping[key] = value
-    return labelmapping
+        id2label[f"{key}"] = value
+        label2id[value] = f"{key}"
+    return id2label, label2id
 
 
 def splitdata(data: pd.DataFrame, ratio: float = 0.2) -> dict:
@@ -108,8 +110,8 @@ class DataManager:
             loaded with from_pretrained() function for a model that is about to be tuned
         """
         self.data = loadpreprocesseddata(path=f"{DATA_DIR}/{path}")
-        self.labelmapping = getmapping(data=self.data)
-        self.nlabels = len(self.labelmapping.values())
+        self.id2label, self.label2id = getmapping(data=self.data)
+        self.nlabels = len(self.id2label.values())
         self.tokenizer = tokenizer
         self.datasets = {}
         self.trainset = []
@@ -124,7 +126,7 @@ class DataManager:
         """
         self.data = loadpreprocesseddata(path=f"{DATA_DIR}/{path}")
         self.labelmapping = getmapping(data=self.data)
-        self.nlabels = len(self.labelmapping.values())
+        self.nlabels = len(self.id2label.values())
         self.resamplesets()
 
     def resamplesets(self):
