@@ -1,4 +1,4 @@
-modelname: "Seznam/small-e-czech"
+modelname: "sentence-transformers/paraphrase-multilingual-mpnet-base-v2" # "Seznam/small-e-czech"
 datapath: "banking.csv"
 lr: 0.0002
-nepochs: 10
+nepochs: 2

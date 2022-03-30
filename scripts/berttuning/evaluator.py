@@ -49,5 +49,5 @@ class Evaluator:
 
 if __name__ == "__main__":
     evaluator = Evaluator()
-    results = evaluator.runevaluation()
+    results = evaluator.runevaluation(n=3)
     print(results)
