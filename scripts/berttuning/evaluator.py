@@ -27,6 +27,17 @@ class Evaluator:
                 "predicted": predictions,
                 "groundtruth": groundtruth}
 
+    def processresults(self) -> dict:
+        """
+        :return: mean and total results respective to the metrics for all trials combined
+        """
+        results = {"accuracy": 0, "correct": 0, "total": 0}
+        for trial in self.trials:
+            for key in results.keys():
+                results[key] += trial[key]
+        results["accuracy"] /= len(self.trials)
+        return results
+
     def runevaluation(self, n: int = 5) -> dict:
         """
         Run evaluations n times and return mean score
@@ -39,12 +50,7 @@ class Evaluator:
             print(f"TRIAL {i}; ACCURACY: {self.trials[-1]['accuracy']}")
             self.tuner.resample()
             self.tuner.reloadmodel()
-        results = {"accuracy": 0, "correct": 0, "total": 0}
-        for trial in self.trials:
-            for key in results.keys():
-                results[key] += trial[key]
-        results["accuracy"] /= n
-        return results
+        return self.processresults()
 
 
 if __name__ == "__main__":
