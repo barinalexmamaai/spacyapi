@@ -10,13 +10,13 @@ class Evaluator:
         config = loadconfig(path=f"{CONFIG_DIR}/finetune.yaml")
         self.tuner = FineTuner(config=config)
 
-    def evaluate(self) -> dict:
+    def evaluate(self, batch: list) -> dict:
         """
         Train and evaluate fine tuned model
+        :param batch: list of dictionaries representing encoded samples
         :return: dictionary with results
         """
         self.tuner.train()
-        batch = self.tuner.dm.testset
         predictions = self.tuner.predictbatch(batch=batch)
         groundtruth = np.array([entry['label'] for entry in batch])
         correct = np.sum(predictions == groundtruth)
@@ -46,7 +46,7 @@ class Evaluator:
         :return: dictionary with results
         """
         for i in range(n):
-            self.trials.append(self.evaluate())
+            self.trials.append(self.evaluate(batch=self.tuner.dm.testset))
             print(f"TRIAL {i}; ACCURACY: {self.trials[-1]['accuracy']}")
             self.tuner.resample()
             self.tuner.reloadmodel()
