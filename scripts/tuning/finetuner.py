@@ -2,11 +2,10 @@ from transformers import AutoTokenizer
 from transformers import AutoModelForSequenceClassification as AMSC
 from transformers import TrainingArguments, Trainer
 import numpy as np
-import time
 import matplotlib.pyplot as plt
-from scripts.berttuning.datamanager import DataManager
+from scripts.tuning.datamanager import DataManager
 from scripts.constants import CONFIG_DIR, OUTPUT_DIR, TUNED_DIR
-from scripts.pathutils import gettimestamp, create_directories
+from scripts.tuning.pathutils import create_directories
 
 
 def showlearningcurve(loss: list, evalloss: list):
@@ -116,13 +115,13 @@ class FineTuner:
         """
         Store model to the corresponding directory
         """
-        output_dir = f"{TUNED_DIR}/{gettimestamp()}"
+        output_dir = f"{TUNED_DIR}/{self.config['outpath']}"
         create_directories(output_dir)
         self.trainer.save_model(output_dir=output_dir)
 
 
 if __name__ == "__main__":
-    from scripts.berttuning.datautils import loadconfig
+    from scripts.tuning.datautils import loadconfig
     config = loadconfig(path=f"{CONFIG_DIR}/finetune.yaml")
     tuner = FineTuner(config=config)
     tuner.train(learningcurve=True)

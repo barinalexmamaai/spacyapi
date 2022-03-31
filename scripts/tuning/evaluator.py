@@ -1,5 +1,5 @@
-from scripts.berttuning.finetuner import FineTuner
-from scripts.berttuning.datautils import loadconfig
+from scripts.tuning.finetuner import FineTuner
+from scripts.tuning.datautils import loadconfig
 from scripts.constants import CONFIG_DIR
 import numpy as np
 

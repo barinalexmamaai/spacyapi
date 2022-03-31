@@ -2,3 +2,4 @@ modelname:  "Seznam/small-e-czech" # "sentence-transformers/paraphrase-multiling
 datapath: "banking.csv"
 lr: 0.0002
 nepochs: 5
+outpath: "default"
