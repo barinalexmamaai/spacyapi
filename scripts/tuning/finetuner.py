@@ -122,7 +122,7 @@ class FineTuner:
 
 if __name__ == "__main__":
     from scripts.tuning.datautils import loadconfig
-    config = loadconfig(path=f"{CONFIG_DIR}/finetune.yaml")
+    config = loadconfig(path=f"{CONFIG_DIR}/default.yaml")
     tuner = FineTuner(config=config)
     tuner.train(learningcurve=True)
     tuner.trainer.evaluate()
