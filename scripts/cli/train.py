@@ -5,13 +5,6 @@ from scripts.tuning.datautils import loadconfig
 from scripts.tuning.finetuner import FineTuner
 from scripts.constants import CONFIG_DIR
 
-HELP = "-h/--help - info about command line arguments" \
-       "\n-m/--model= - name of a hugging face model to fine tune" \
-       "\n-d/--data= - path to a directory with training data" \
-       "\n-l/--lrate= - learning rate" \
-       "\n-e/--epochs= - number of training epochs" \
-       "\n-o/--out= - path to a directory where to store trained model"
-
 
 def initconfig() -> dict:
     """
@@ -22,22 +15,16 @@ def initconfig() -> dict:
     return config
 
 
-def argstoconfig(args, maxsymbols: int = 30) -> dict:
+def optstoconfig(opts, maxsymbols: int = 30) -> dict:
     """
-    :param args: command line arguments
+    :param opts: command line options
     :param maxsymbols: maximum number of symbols per argument
     :return: configuration
     """
     config = initconfig()
-    try:
-        opts, args = getopt.getopt(args, "hm:d:l:e:o:", ["help", "model=", "data=", "lrate=", "epochs=", "out="])
-    except getopt.GetoptError:
-        sys.exit("Input format error. Try -h or --help")
     for opt, arg in opts:
         if len(arg) > maxsymbols:
             sys.exit(f"Malicious input danger. Keep parameters under {maxsymbols} symbols")
-        if opt in ("-h", "--help"):
-            print(HELP)
         elif opt in ("-m", "--model"):
             config["modelname"] = arg
         elif opt in ("-d", "--data"):
@@ -54,18 +41,15 @@ def argstoconfig(args, maxsymbols: int = 30) -> dict:
                 sys.exit("Number of epochs must be an integer value")
         elif opt in ("-o", "--out"):
             config["outpath"] = arg.replace(" ", "_")
-        else:
-            pass
-            # sys.exit("Unknown parameter specified")
     return config
 
 
-def train(args):
+def train(opts):
     """
-    :param args: command line arguments
+    :param opts: command line options
     :return:
     """
-    config = argstoconfig(args=args)
+    config = optstoconfig(opts=opts)
     tuner = FineTuner(config=config)
     tuner.train()
     tuner.savemodel()

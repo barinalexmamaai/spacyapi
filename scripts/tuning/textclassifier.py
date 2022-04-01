@@ -32,7 +32,7 @@ class TextClassifier:
 
 
 if __name__ == "__main__":
-    modelpath = "2022_03_30_15_28_38_883828"
+    modelpath = "basic"
     clf = TextClassifier(modelpath=modelpath)
     import time
     s = time.time()
